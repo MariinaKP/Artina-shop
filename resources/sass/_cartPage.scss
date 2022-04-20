@@ -1,0 +1,99 @@
+@import 'variables';
+
+.cart {
+    &__wrapper {
+        display: flex;
+    }
+    &__products {
+        width: 60%;
+        &__single-product {
+            display: flex;
+            margin-bottom: 1rem;
+            &__image {
+                width: 150px;
+            }
+            &__info {
+                margin-left: 1rem;
+                width: 65%;
+                &__header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    margin: 0 0 0.50rem 0;
+                    &__title {
+                        margin: 0;
+                    }
+                }
+                &__details {
+                    margin: 1.5rem 0;
+                    display: flex;
+                    align-items: center;
+                    &__color {
+                        margin: 0 0.50rem 0 0;
+                    }
+                    &__size {
+                        margin: 0 0.50rem 0 2rem;
+                    }
+                }
+
+            }
+        }
+    }
+    &__price-details {
+        width: 30%;
+        border-left: 1px solid $primary;
+        padding: 2rem;
+        &__discount {
+            margin: 2rem 0;
+            &__form {
+                display: flex;
+                margin-top: 0.50rem;
+                &__code {
+                    width: 80%;
+                    margin-right: 1rem;
+                }
+                .btn {
+                    width: 40%;
+                }
+            }
+        }
+        &__row {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.70rem 0;
+            div {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.delivery {
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(3, 40px);
+        grid-row-gap: 30px;
+        grid-column-gap: 20px;
+
+        input {
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            padding-left: 5px;
+            background: transparent;
+            border: 2px solid $black;
+        }
+        input:focus {
+            outline: none;
+            border-color: $accent;
+        }
+        &__btn {
+            grid-column-start: 2;
+            margin-top: 2rem;
+        }
+    }
+}

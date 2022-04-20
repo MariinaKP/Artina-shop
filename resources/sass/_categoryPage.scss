@@ -1,0 +1,45 @@
+@import 'variables';
+.category {
+    display: flex;
+    justify-content: space-between;
+      &__filter {
+          width: 10%;
+          &__title {
+              font-weight: bold;
+              font-size: 20px;
+              margin-bottom: 1rem;
+          }
+          &__group {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 0.50rem;
+          }
+    }
+    &__title {
+        font-size: 30px;
+        margin: 0;
+    }
+&__products{
+    width: 85%;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 2rem;
+
+    &__single-product {
+        &__image{
+            width: 100%;
+        }
+        &__title {
+            margin-top: 0.50rem;
+        }
+        &__price {
+            margin: 0.50rem 0;
+        }
+    }
+
+}
+}

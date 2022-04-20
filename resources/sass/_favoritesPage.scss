@@ -1,0 +1,37 @@
+@import 'variables';
+
+.favorites {
+    &__title {
+        font-size: 30px;
+        margin: 0;
+    }
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        margin-top: 2rem;
+
+        &__single-product {
+            &__image{
+                width: 100%;
+            }
+            &__title {
+                margin-top: 0.50rem;
+            }
+            &__price {
+                margin: 0.50rem 0;
+            }
+            &__color {
+                display: flex;
+                align-items: center;
+                span {
+                    margin-right: 0.25rem;
+                }
+            }
+            &__picker-list {
+                width: 100%;
+                margin: 0.50rem 0;
+            }
+        }
+    }
+}
